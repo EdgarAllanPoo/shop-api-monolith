@@ -25,6 +25,7 @@ func main() {
 
 	router := gin.Default()
 	router.POST("/register", controllers.Register)
+	router.POST("/login", controllers.Login)
 
 	log.Fatal(router.Run(":" + port))
 }

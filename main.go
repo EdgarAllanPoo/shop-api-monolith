@@ -27,5 +27,7 @@ func main() {
 	router.POST("/register", controllers.Register)
 	router.POST("/login", controllers.Login)
 
+	router.GET("/products", controllers.GetProducts)
+
 	log.Fatal(router.Run(":" + port))
 }
